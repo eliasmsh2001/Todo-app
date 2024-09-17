@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Bright-Blue: hsl(220, 98%, 61%);
+  --Check-Background: linear-gradient(
+    to right,
+    hsl(192, 100%, 67%),
+    hsl(280, 87%, 65%)
+  );
+
+  /* ### Light Theme */
+
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --Very-Light-Grayish-Blue: hsl(236, 33%, 92%);
+  --Light-Grayish-Blue: hsl(233, 11%, 84%);
+  --Dark-Grayish-Blue: hsl(236, 9%, 61%);
+  --Very-Dark-Grayish-Blue: hsl(235, 19%, 35%);
+
+  /* ### Dark Theme */
+
+  --Very-Dark-Blue: hsl(235, 21%, 11%);
+  --Very-Dark-Desaturated-Blue: hsl(235, 24%, 19%);
+  --Light-Grayish-Blue-darkMode: hsl(234, 39%, 85%);
+  --Light-Grayish-Blue-hover: hsl(236, 33%, 92%); /* hover */
+  --Dark-Grayish-Blue: hsl(234, 11%, 52%);
+  --Very-Dark-Grayish-Blue: hsl(233, 14%, 35%);
+  --Very-Dark-Grayish-Blue: hsl(237, 14%, 26%);
+}
+
+.light {
+  --color-bg: 236deg, 33%, 92%;
+  --main-text: 235deg, 19%, 35%;
+  --secondary-text: 236deg, 9%, 61%;
+  --secondary-background: 0deg, 0%, 98%;
+  --color-border: 233deg, 11%, 84%;
+  --color-title: 0deg, 0%, 98%;
+}
+
+.dark {
+  --color-bg: 237deg, 14%, 26%;
+  --main-text: 234deg, 39%, 85%;
+  --secondary-text: 234deg, 11%, 52%;
+  --secondary-background: 235deg, 24%, 19%;
+  --color-border: 237deg, 14%, 26%;
+  --color-title: 236deg, 33%, 92%;
+}
+
+#active {
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+#activeFilter {
+  color: var(--Bright-Blue);
+}
