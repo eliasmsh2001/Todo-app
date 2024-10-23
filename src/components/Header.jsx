@@ -9,7 +9,7 @@ const Header = () => {
   const themeState = useSelector((state) => state.todos.theme);
 
   let bgCssClass =
-    "h-72 w-full bg-no-repeat bg-cover fixed top-0 left-0 -z-10 ";
+    "h-72 w-full bg-no-repeat bg-cover fixed top-0 left-0 right-0  -z-10 ";
   let toggleButton;
   function onToggleTheme() {
     dispatch(todoActions.onToggleTheme());
@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={bgCssClass}></div>
+      <div className={bgCssClass} />
 
       <div className="flex justify-between w-full sm:w-[50vw] px-14 mx:px-0 my-10">
         <h1 className="text-2xl font-semibold tracking-[.5rem] text-title ">
