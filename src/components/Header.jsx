@@ -43,7 +43,7 @@ const Header = () => {
     <>
       <div className={bgCssClass} />
 
-      <div className="flex justify-between w-full sm:w-[50vw] px-14 mx:px-0 my-10">
+      <div className="flex justify-between w-80 md:w-[40vw] my-10">
         <h1 className="text-2xl font-semibold tracking-[.5rem] text-title ">
           TODO
         </h1>

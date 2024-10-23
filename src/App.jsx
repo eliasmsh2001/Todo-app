@@ -23,10 +23,10 @@ function App() {
 
   return (
     <>
-      <main className="min-h-screen w-screen relative flex justify-center flex-col items-center">
+      <main className="min-h-screen w-screen relative pt-8 flex justify-start flex-col items-center">
         <Header />
         <form onSubmit={onSubmitTodo} className="block">
-          <div className="md:my-6 w-64 sm:w-[40vw] bg-contentBg min-h-12 rounded-md flex items-center justify-start">
+          <div className="md:my-6 w-80 sm:w-96 md:w-[40vw] bg-contentBg min-h-12 rounded-md flex items-center justify-start">
             <span className="size-5 border-[1px] rounded-full bg-transparent border-border mx-3 "></span>
             <input
               ref={value}

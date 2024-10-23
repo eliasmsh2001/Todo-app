@@ -25,7 +25,7 @@ const ContainerActions = () => {
   return (
     <>
       {todos.length > 0 && (
-        <div className="w-64 sm:w-[40vw] h-12 bg-contentBg flex items-center justify-center my-4 rounded-md shadow-sm text-text relative">
+        <div className="w-80  sm:w-96 md:w-[40vw] h-12 bg-contentBg flex items-center justify-center my-4 rounded-md shadow-sm text-text relative">
           <h4 className="text-xs absolute left-5 hidden lg:block">
             {activeTodos.length} items left
           </h4>

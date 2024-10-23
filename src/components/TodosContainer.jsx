@@ -44,7 +44,7 @@ const TodosContainer = () => {
     dispatch(todoActions.onClearCompleted());
   }
   return (
-    <ul className=" w-64 sm:w-[40vw] rounded-md overflow-hidden shadow-lg mt-1">
+    <ul className=" w-80 sm:w-96 md:w-[40vw] rounded-md overflow-hidden shadow-lg mt-1">
       {content.map((todo, index) => {
         return (
           <Todo
